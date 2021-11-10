@@ -3,45 +3,49 @@ import "./Header.css";
 import reactDom from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import NavBar from "../NavBar/NavBar";
 
 const Header = () => {
   return (
-    <Carousel
-      autoPlay={true}
-      showThumbs={false}
-      showArrows={true}
-      infiniteLoop={true}
-    >
-      <div>
-        <img
-          src="https://cdn.shopify.com/s/files/1/0447/7167/2225/files/img2_37ba7379-0e0c-4a3f-84eb-6ce908b555a9_x650.png"
-          alt="First slide"
-          height="400px"
-          weight="100%"
-        />
-        <p className="legend">Legend 1</p>
-      </div>
-      <div>
-        <img
-          src="https://t4.ftcdn.net/jpg/01/96/82/11/240_F_196821190_4yPmu9YcrwXKz1miV0RFoiykh9I7kfle.jpg"
-          alt="First slide"
-          height="400px"
-          weight="100%"
-        />
+    <div>
+      <NavBar></NavBar>
+      <Carousel
+        autoPlay={true}
+        showThumbs={false}
+        showArrows={true}
+        infiniteLoop={true}
+      >
+        <div>
+          <img
+            src="https://image.freepik.com/free-vector/baby-cosmetics-bottles-kids_33099-1549.jpg"
+            alt="First slide"
+            height="400px"
+            weight="100%"
+          />
+          <p className="legend">Legend 1</p>
+        </div>
+        <div>
+          <img
+            src="https://image.freepik.com/free-photo/bath-accessories-baby-table-background_392895-4785.jpg"
+            alt="First slide"
+            height="400px"
+            weight="100%"
+          />
 
-        <p className="legend">Legend 2</p>
-      </div>
-      <div>
-        <img
-          src="https://t4.ftcdn.net/jpg/01/96/82/11/240_F_196821190_4yPmu9YcrwXKz1miV0RFoiykh9I7kfle.jpg"
-          alt="First slide"
-          height="400px"
-          weight="100%"
-        />
+          <p className="legend">Legend 2</p>
+        </div>
+        <div>
+          <img
+            src="https://image.freepik.com/free-photo/bath-accessories-baby-table-bathroom-closeup_392895-4786.jpg"
+            alt="First slide"
+            height="400px"
+            weight="100%"
+          />
 
-        <p className="legend">Legend 3</p>
-      </div>
-    </Carousel>
+          <p className="legend">Legend 3</p>
+        </div>
+      </Carousel>
+    </div>
   );
 };
 
