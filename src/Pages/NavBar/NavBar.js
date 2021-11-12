@@ -1,37 +1,33 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const NavBar = () => {
   return (
-    <div className="header">
-      <nav>
-        <NavLink exact activeClassName="active" to="/">
-          Home
-        </NavLink>
-        <NavLink activeClassName="active" to="/services">
-          Add Service
-        </NavLink>
-        <NavLink activeClassName="active" to="/mylist">
-          Mylist
-        </NavLink>
-        <NavLink activeClassName="active" to="/gallery">
-          Gallery
-        </NavLink>
-        <NavLink activeClassName="active" to="/about">
-          About
-        </NavLink>
-        {/*  {user.displayName && (
-          <span style={{ color: "white" }}>Hello {user.displayName}</span>
-        )}
-        {user.displayName ? (
-          <button onClick={logout}>Log out</button>
-        ) : (
-          <NavLink activeClassName="active" to="/login">
-            Login
-          </NavLink>
-        )} */}
-      </nav>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            News
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 };
 
