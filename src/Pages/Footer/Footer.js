@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 const Footer = () => {
   return (
     <Box
-      style={{ backgroundColor: "#007aff", color: "white" }}
+      style={{ backgroundColor: "#007aff", color: "white", marginTop: "10px" }}
       sx={{ flexGrow: 1 }}
     >
       <Grid container spacing={3}>
