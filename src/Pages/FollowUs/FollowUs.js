@@ -6,7 +6,7 @@ const FollowUs = () => {
     <Box
       style={{
         backgroundColor: "#f5d6d6",
-        color: "#cc6600",
+        color: "red",
         marginTop: "10px",
         marginBottom: "40px",
       }}
@@ -37,7 +37,7 @@ const FollowUs = () => {
         <Grid item md={3} xs={12}>
           <Link href="https://www.instagram.com/p/CEjizqCpBIE/">
             <img
-              src="https://image.freepik.com/free-photo/baby-girl-towel-after-bathing-crib-white-cotton-bed-lying-her-stomach-smiling-nursery-newborn-hygiene_267293-4898.jpg"
+              src="https://image.freepik.com/free-photo/happy-child-orange-sweater-plays-with-feather-floor_8353-182.jpg"
               alt="First slide"
               height="300px"
               weight="100%"
@@ -47,7 +47,7 @@ const FollowUs = () => {
         <Grid item md={3} xs={12}>
           <Link href="https://www.instagram.com/p/CEjizqCpBIE/">
             <img
-              src="https://image.freepik.com/free-photo/baby-boy-sits-after-bathing-bath-white-robe-with-rubber-duck-towel-concept-hygiene-washing_267293-4811.jpg"
+              src="https://image.freepik.com/free-photo/small-baby-lies-bed_8353-5187.jpg"
               alt="First slide"
               height="300px"
               weight="100%"
