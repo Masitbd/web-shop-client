@@ -1,0 +1,37 @@
+[{
+  "id": 1,
+  "name": "Jonshon Lotion",
+  "img": "https://image.freepik.com/free-vector/baby-cosmetics-bottles-kids_33099-1549.jpg",
+  "description": "Body Moisturizer by CETAPHIL, Hydrating Moisturizing Lotion for "
+},
+{
+  "id": 2,
+  "name": "Nurshing Lotion",
+  "img": "https://image.freepik.com/free-vector/baby-toiletries-skincare-packaging-bundle-with-shampoo-baby-wash-pump-bottle-face-hand-cream-tube-baby-wipes-foil-sachet-pack_215348-403.jpg",
+  "description": "Everyone Nourishing Hand and Body Lotion, 32 Ounce (Pack of 2), Citrus and Mint "
+},
+{
+  "id": 3,
+  "name": "Nivea Lotion",
+  "img": "https://image.freepik.com/free-photo/baby-care-products-table-daily-baby-care-products-skin-care_441923-9508.jpg",
+  "description": "NIVEA Essentially Enriched Body Lotion Pack of 48 Hour Moisture for Dry"
+},
+{
+  "id": 4,
+  "name": "Captil Lotion",
+  "img": "https://image.freepik.com/free-psd/baby-lotion-bottle-packaging-mockup_439185-1633.jpg",
+  "description": "CETAPHIL, Hydrating Moisturizing Lotion for All Skin Types, Suitable for "
+},
+{
+  "id": 5,
+  "name": "Cruel Lortion",
+  "img": "https://as2.ftcdn.net/v2/jpg/02/67/63/37/1000_F_267633728_NkB1UFHj5MqdKeAtn25q4O5LqWdkzKFD.jpg",
+  "description": "Curél Itch Defense Calming Body Lotion, Moisturizer for Dry, Body and Hand Lotion"
+},
+{
+  "id": 6,
+  "name": "Getphel Daily",
+  "img": "https://image.freepik.com/free-photo/bath-accessories-baby-table-bathroom-closeup_392895-4786.jpg",
+  "description": "Eucerin Daily Hydration Lotion with SPF 15 - Broad Spectrum Body Lotion for Dry Skin  "
+}
+]

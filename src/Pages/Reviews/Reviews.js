@@ -1,9 +1,4 @@
-import { styled } from "@mui/material/styles";
-import { Box, Card, Grid, Paper, Typography } from "@mui/material";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -13,7 +8,7 @@ const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("./reviews.json")
+    fetch("http://localhost:5000/reviews")
       .then((response) => response.json())
       .then((data) => setReviews(data));
   }, []);

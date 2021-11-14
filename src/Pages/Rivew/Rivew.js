@@ -12,23 +12,28 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Rivew = (props) => {
-  const { id, name, img, description, rating } = props.review;
+  const { name, img, description, rating } = props.review;
   return (
     <Grid item md={3} xs={12}>
       <Item style={{ marginLeft: "40px" }}>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
+            style={{ borderRadius: "10%" }}
             component="img"
-            alt="green iguana"
             height="140"
+            vertical
+            alt="green iguana"
             image={img}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h6" component="div">
               {description}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {name}
+            </Typography>
+            <Typography variant="body2" color="text.primary">
+              Rating: {rating}
             </Typography>
           </CardContent>
         </Card>
