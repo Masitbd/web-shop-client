@@ -1,10 +1,18 @@
 import { Container, Grid, Typography, Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory, useLocation } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
+import CircularProgress from "@mui/material/CircularProgress";
+import Alert from "@mui/material/Alert";
+import AlertTitle from "@mui/material/AlertTitle";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
+  const { user, loginUser, isLoading, autherror } = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+
   const handleOnchange = (e) => {
     const field = e.target.name;
     const value = e.target.value;
@@ -14,7 +22,7 @@ const Login = () => {
     setLoginData(newLoginData);
   };
   const handleLoginSubmit = (e) => {
-    alert("hellow");
+    loginUser(loginData.email, loginData.password, location, history);
     e.preventDefault();
   };
   return (
@@ -54,6 +62,19 @@ const Login = () => {
               >
                 Login
               </Button>
+              {isLoading && <CircularProgress />}
+              {user?.email && (
+                <Alert severity="success">
+                  <AlertTitle>Success</AlertTitle>
+                  User login successfully
+                </Alert>
+              )}
+              {autherror && (
+                <Alert severity="error">
+                  <AlertTitle>Error</AlertTitle>
+                  {autherror}
+                </Alert>
+              )}
             </form>
           </Grid>
           <Grid item xs={12} md={6}></Grid>
