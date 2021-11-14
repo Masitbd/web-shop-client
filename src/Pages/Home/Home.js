@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Box>
-        <div>This is home page</div>
+        <div style={{ color: "red", fontSize: "40px" }}>Product inormation</div>
         <Products></Products>
         <Reviews></Reviews>
         <FollowUs></FollowUs>

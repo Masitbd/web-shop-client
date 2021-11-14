@@ -1,71 +1,19 @@
-## https://babs-theme.myshopify.com/
+# HEALTH CARE SYSTEM
 
-## https://v5.reactrouter.com/web/guides/quick-start
+### Information
 
- <!-- <Grid item md={3} xs={12}>
-            <Item>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Item>
-          </Grid>
-          <Grid item md={3} xs={12}>
-            <Item>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Item>
-          </Grid>
-          <Grid item md={3} xs={12}>
-            <Item>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Item>
-          </Grid>
- -->
+- Prefer controlled components over uncontrolled. [read about it here](https://reactjs.org/docs/forms.html#controlled-components)
+- Use functional components instead of class components
+
+  - Install react bootstrap
+
+- Add this for css in the app.js
+
+- Currently, to save time, we dont do unit tests
+- install React router
+
+### Styling
+
+Use the reactbootstrap fot styling the application.
+
+### live site https://baby-portal-34e2e.web.app/

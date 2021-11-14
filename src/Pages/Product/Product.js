@@ -25,7 +25,10 @@ const Product = (props) => {
           </Typography>
         </CardContent>
         <Link to={`/productInfo/${_id}`}>
-          <Button style={{ marginBottom: "16px" }} variant="contained">
+          <Button
+            style={{ marginBottom: "16px", textDecoration: "none" }}
+            variant="contained"
+          >
             More
           </Button>
         </Link>

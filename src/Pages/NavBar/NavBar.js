@@ -27,6 +27,12 @@ const NavBar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Baby Shop
           </Typography>
+          <NavLink
+            style={{ textDecoration: "none", color: "white" }}
+            to="/moreProducts"
+          >
+            <Button color="inherit">Explore</Button>
+          </NavLink>
           {user.email ? (
             <Box>
               <NavLink
