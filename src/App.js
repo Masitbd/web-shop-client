@@ -4,6 +4,9 @@ import About from "./Pages/About/About";
 import Footer from "./Pages/Footer/Footer";
 import Header from "./Pages/Header/Header";
 import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login/Login";
+import Register from "./Pages/Login/Register/Register";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -17,19 +20,19 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/services">{/* <AddService></AddService> */}</Route>
-          <Route path="/mylist">{/*  <MyList></MyList> */}</Route>
-          <Route path="/gallery">{/*  <Gallery></Gallery> */}</Route>
-          <Route path="/about">
-            <About></About>
+
+          <Route path="/login">
+            <Login></Login>
           </Route>
-          <Route path="/login">{/*  <Login></Login> */}</Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
           {/*   <PrivateRout path="/serviceInfo/:serviceId">
             <ServiceInfo></ServiceInfo>
-          </PrivateRoute>
+          </PrivateRoute>*/}
           <Route path="*">
             <NotFound></NotFound>
-          </Route> */}
+          </Route>
         </Switch>
         <Footer></Footer>
       </Router>
