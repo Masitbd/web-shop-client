@@ -21,6 +21,9 @@ const useFirebase = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         setAuthError("");
+        const newUser = { email };
+        setUser(newUser);
+        saveUser(email);
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -66,6 +69,17 @@ const useFirebase = () => {
     });
     return () => unsubscribed;
   }, []);
+
+  const saveUser = (email) => {
+    const user = { email };
+    fetch("http://localhost:5000/users", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(user),
+    }).then();
+  };
 
   return { registerUser, loginUser, user, logout, autherror, isLoading };
 };
